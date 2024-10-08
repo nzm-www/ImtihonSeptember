@@ -1,0 +1,209 @@
+/* .imgbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    #989898 3%,
+    #475563 38%,
+    #ffffff 68%,
+    #303013 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+.form {
+  margin-top: -300px;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 530px;
+}
+.form input {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 7px;
+  background: #00000000;
+  box-shadow: rgba(0, 0, 0, 0.566) 0px 5px 15px;
+  border: 0;
+  outline-style: none;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.dvo {
+  display: flex;
+  gap: 30px;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btnform {
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  perspective: 30rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+
+.btnform::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background: linear-gradient(
+    320deg,
+    rgba(255, 255, 255, 0.251),
+    rgba(255, 255, 255, 0.263)
+  );
+  z-index: 1;
+  transition: background 3s;
+}
+
+.btnform:hover::before {
+  animation: rotate 1s;
+  transition: all 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.loginlink {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  gap: 10px;
+  background: #8f8f8f00;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: end;
+  color: aliceblue;
+  padding-top: 5px;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  border: 0;
+}
+.loginlink:hover {
+  font-size: 20px;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.formbtndiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 240px;
+}

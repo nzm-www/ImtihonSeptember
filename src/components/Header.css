@@ -1,0 +1,84 @@
+.header {
+  background: #989898;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar a {
+  color: #ffd277;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.navbar a:hover {
+  transition: 0.5s;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  background: #333;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  cursor: pointer;
+  font-size: 35px;
+  gap: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+}
+.buttoncontainer {
+  display: flex;
+  background-color: #333;
+  width: 250px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+.logout {
+  color: #ffd277;
+  font-size: 14px;
+}
+.icon {
+  color: #ffd277;
+
+  font-size: 20px;
+}
+.loguot {
+  position: absolute;
+  font-size: 20px;
+  color: #ffd277;
+  font-weight: 800;
+  margin-top: 7px;
+  margin-left: 180px;
+}
