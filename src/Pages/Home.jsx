@@ -76,7 +76,6 @@ const Home = () => {
   return (
     <div className="homebody">
       <Header />
-      
       <div className="container">
         <div
           style={{
@@ -139,8 +138,8 @@ const Home = () => {
                 key={book.id}
                 onClick={() => handleCardClick(book.id)}
               >
-                <img  src={book.thumbnailUrl} alt={book.title} />
-                <h3 className="cardh3">{book.title}</h3>
+                <img src={book.thumbnailUrl} alt={book.title} />
+                <h3 className="cardh3x`">{book.title}</h3>
                 <p>Authors: {book.authors.join(", ")}</p>
                 <p>Categories: {book.categories.join(", ")}</p>
                 <p>

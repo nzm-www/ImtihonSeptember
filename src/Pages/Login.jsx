@@ -26,8 +26,7 @@ function Login() {
       localStorage.setItem("token", response.data.accessToken);
       navigate("/");
     } catch (error) {
-      console.error("Login failed:", error);
-      setError("Login failed. Please check your credentials.");
+      setError("Loginda hatolik mavjud qaytadan urinib kersez yaxshi boladi domla");
     }
   };
 
